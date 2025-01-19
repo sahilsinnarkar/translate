@@ -2,10 +2,13 @@ from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from utils.translator import process_video, INDIAN_LANGUAGES
 import os
-import tempfile
+
+from flask import Flask
+from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
+
 
 # List of supported languages
 @app.route('/api/languages', methods=['GET'])
