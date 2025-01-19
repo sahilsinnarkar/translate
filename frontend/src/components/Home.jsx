@@ -4,10 +4,10 @@ const Home = () => {
   return (
     <div className="relative min-h-screen bg-gray-100 text-gray-800">
       {/* Background Video */}
-      <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
+      {/* <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
         <source src="/background4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
       {/* Content Overlay */}
       <div className="relative z-10 bg-white/90 min-h-screen flex flex-col items-center justify-center shadow-inner">
@@ -36,7 +36,7 @@ const Home = () => {
               Video Upload
             </a>
             <a
-              href="/blog"
+              href="/blogs"
               className="w-64 px-8 py-4 bg-gray-900 text-white hover:bg-purple-600 rounded-xl text-lg font-medium shadow-lg transform transition-all duration-300 hover:scale-105 bounce text-center"
             >
               Blog
