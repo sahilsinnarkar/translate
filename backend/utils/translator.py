@@ -71,7 +71,7 @@ def convert_video_to_audio(video_file):
         return audio_path
     except Exception as e:
         print(f"Error converting video to audio: {str(e)}")
-        return None
+        return 
 
 # Transcribe audio
 def transcribe_audio_to_english(audio_path, source_language):
@@ -88,7 +88,7 @@ def transcribe_audio_to_english(audio_path, source_language):
         return text
     except Exception as e:
         print(f"Error in transcription: {str(e)}")
-        return None
+        return 
 
 # Translate text
 def translate_text(text, target_language):
@@ -98,7 +98,7 @@ def translate_text(text, target_language):
         return translation.text
     except Exception as e:
         print(f"Error translating text: {str(e)}")
-        return None
+        return 
 
 # Create audio file from text
 def create_audio_file(text, language_code, filename):
@@ -109,4 +109,4 @@ def create_audio_file(text, language_code, filename):
         return output_path
     except Exception as e:
         print(f"Error creating audio file: {str(e)}")
-        return None
+        return 
