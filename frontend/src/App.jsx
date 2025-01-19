@@ -14,7 +14,6 @@ const App = () => {
     <div className="App">
       <Navbar />
       {loading && <p>Loading...</p>}
-      {/* {results && <pre>{JSON.stringify(results, null, 2)}</pre>} */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/upload-record" element={<UploadRecord />} />

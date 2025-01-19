@@ -24,7 +24,7 @@ const VideoUpload = ({ setResults, setLoading }) => {
 
         setLoading(true);
         try {
-            const response = await axios.post('http://localhost:5000/api/translate', formData, {
+            const response = await axios.post('https://translate-backend-ciuq.onrender.com/translate', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
             setResults(response.data);
